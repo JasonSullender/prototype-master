@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: af8c75b699f1799418c5746ca348568f
+timeCreated: 1444771864
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: gladiator_arena_sprites_0
+    21300002: gladiator_arena_sprites_1
+    21300004: gladiator_arena_sprites_2
+    21300006: gladiator_arena_sprites_3
+    21300008: gladiator_arena_sprites_4
+    21300010: gladiator_arena_sprites_5
+    21300012: gladiator_arena_sprites_6
+    21300014: gladiator_arena_sprites_7
+    21300016: gladiator_arena_sprites_8
+    21300018: gladiator_arena_sprites_9
+    21300020: gladiator_arena_sprites_10
+    21300022: gladiator_arena_sprites_11
+    21300024: gladiator_arena_sprites_12
+    21300026: gladiator_arena_sprites_13
+    21300028: gladiator_arena_sprites_14
+    21300030: gladiator_arena_sprites_15
+    21300032: gladiator_arena_sprites_16
+    21300034: gladiator_arena_sprites_17
+    21300036: gladiator_arena_sprites_18
+    21300038: gladiator_arena_sprites_19
+    21300040: gladiator_arena_sprites_20
+    21300042: gladiator_arena_sprites_21
+    21300044: gladiator_arena_sprites_22
+    21300046: gladiator_arena_sprites_23
+    21300048: gladiator_arena_sprites_24
+    21300050: gladiator_arena_sprites_25
+    21300052: gladiator_arena_sprites_26
+    21300054: gladiator_arena_sprites_27
+    21300056: gladiator_arena_sprites_28
+    21300058: gladiator_arena_sprites_29
+    21300060: gladiator_arena_sprites_30
+    21300062: gladiator_arena_sprites_31
+    21300064: gladiator_arena_sprites_32
+    21300066: gladiator_arena_sprites_33
+    21300068: gladiator_arena_sprites_34
+    21300070: gladiator_arena_sprites_35
+    21300072: gladiator_arena_sprites_36
+    21300074: gladiator_arena_sprites_37
+    21300076: gladiator_arena_sprites_38
+    21300078: gladiator_arena_sprites_39
+    21300080: gladiator_arena_sprites_40
+    21300082: gladiator_arena_sprites_41
+    21300084: gladiator_arena_sprites_42
+    21300086: gladiator_arena_sprites_43
+    21300088: gladiator_arena_sprites_44
+    21300090: gladiator_arena_sprites_45
+    21300092: gladiator_arena_sprites_46
+    21300094: gladiator_arena_sprites_47
+    21300096: gladiator_arena_sprites_48
+    21300098: gladiator_arena_sprites_49
+    21300100: gladiator_arena_sprites_50
+    21300102: gladiator_arena_sprites_51
+    21300104: gladiator_arena_sprites_52
+    21300106: gladiator_arena_sprites_53
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: gladiator_arena_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 292
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 292
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 292
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 292
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 292
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 292
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 237
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 237
+        width: 81
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 237
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 237
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 214
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 237
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 182
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 182
+        width: 40
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 182
+        width: 51
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 220
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 212
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 182
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 182
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 182
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 182
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 127
+        width: 76
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 127
+        width: 33
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 127
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 127
+        width: 77
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_25
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 127
+        width: 81
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_26
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 127
+        width: 76
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_27
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 72
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_28
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 72
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_29
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 72
+        width: 23
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_30
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 72
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 72
+        width: 49
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_32
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 72
+        width: 45
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 17
+        width: 46
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_34
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 17
+        width: 36
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_35
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 17
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_36
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 42
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_37
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 17
+        width: 69
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_38
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 17
+        width: 76
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_39
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_40
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_41
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_42
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_43
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_44
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_45
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_46
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_47
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_48
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_49
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_50
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 5
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_51
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_52
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gladiator_arena_sprites_53
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
