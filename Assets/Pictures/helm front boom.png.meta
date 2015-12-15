@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: eb096013a2a5ac043af638e28070a5ac
+timeCreated: 1450078134
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: helm front boom_1
+    21300002: helm front boom_14
+    21300004: helm front boom_16
+    21300006: helm front boom_18
+    21300008: helm front boom_19
+    21300010: helm front boom_20
+    21300012: helm front boom_21
+    21300014: helm front boom_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: helm front boom_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 58
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_14
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 48
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_16
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 49
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_18
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 49
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_19
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 53
+        width: 67
+        height: 96
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_20
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 48
+        width: 75
+        height: 112
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_21
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 44
+        width: 86
+        height: 119
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: helm front boom_23
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 33
+        width: 104
+        height: 146
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

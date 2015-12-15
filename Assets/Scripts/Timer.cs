@@ -11,7 +11,9 @@ public class Timer : MonoBehaviour {
 
 
 	}
-	
+	/// <summary>
+	/// We update and show time that is being counted up.
+	/// </summary>
 	// Update is called once per frame
 	void Update () {
 		startTime += Time.deltaTime;

@@ -3,41 +3,48 @@ using System.Collections;
 
 public class ThrowSpear : MonoBehaviour {
 
-	public Rigidbody2D spear;				// Prefab of the spear.
-	public float speed;				// The speed the spearwill fire at.
+	public Rigidbody2D spear;				
+	public float speed;				
 	public float fireRate;
 	
-	private CharController playerCtrl;		// Reference to the PlayerControl script.
+	private CharController playerCtrl;		
 	private float nextFire;
+	private Animator throwanim;
 	
-	
+	/// <summary>
+	/// We get the charcontroller component to reference code.
+	/// </summary>
 	void Start()
 	{
-		// Setting up the references.
+
 
 		playerCtrl = transform.root.GetComponent<CharController>();
 	}
 	
-	
+	/// <summary>
+	/// If the space button is pressed and the time for the fire is ready then we check which way the Player object is facing
+	/// If the Player object is facing right then we instantiate the Spear object at a speed that we set 
+	/// if the Player object is not facing right then we flip the way that the Spear is being instantiated by the opposite of the facing right
+	/// </summary>
 	void Update ()
 	{
-		// If the fire button is pressed which is space bar
+
 		if(Input.GetButtonDown("Jump")&& Time.time > nextFire)
 		{
 
-			// If the player is facing right...
+
 			if(playerCtrl.facingRight)
 			{
 				nextFire = Time.time + fireRate;
-				// ... instantiate the spear facing right and set it's velocity to the right. 
-				Rigidbody2D bulletInstance = Instantiate(spear, transform.position, Quaternion.Euler(new Vector3(0f,0,-90f))) as Rigidbody2D;
+
+				Rigidbody2D bulletInstance = Instantiate(spear, transform.position, Quaternion.Euler(new Vector3(0f,0,0f))) as Rigidbody2D;
 				bulletInstance.velocity = new Vector2(speed, 0);
 			}
 			else
 			{
 				nextFire = Time.time + fireRate;
-				// Otherwise instantiate the spearfacing left and set it's velocity to the left.
-				Rigidbody2D bulletInstance = Instantiate(spear, transform.position, Quaternion.Euler(new Vector3(0f,0f,90f))) as Rigidbody2D;
+
+				Rigidbody2D bulletInstance = Instantiate(spear, transform.position, Quaternion.Euler(new Vector3(0f,0f,-180f))) as Rigidbody2D;
 				bulletInstance.velocity = new Vector2(-speed, 0);
 			}
 		}
