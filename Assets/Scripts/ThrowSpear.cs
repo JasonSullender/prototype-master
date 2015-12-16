@@ -1,15 +1,19 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// Instantiates a spear on the player 
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class ThrowSpear : MonoBehaviour {
 
-	public Rigidbody2D spear;				
-	public float speed;				
-	public float fireRate;
+	public Rigidbody2D spear;//rigidbody of spear				
+	public float speed;		//speed of spear		
+	public float fireRate;//When another spear can instantiate
 	
-	private CharController playerCtrl;		
-	private float nextFire;
-	private Animator throwanim;
+	private CharController playerCtrl;	//player controller code	
+	private float nextFire;//Time until next fire
+	private Animator throwanim;//Player throw animation
 	
 	/// <summary>
 	/// We get the charcontroller component to reference code.

@@ -1,11 +1,15 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This counts time up and displays on the screen
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class Timer : MonoBehaviour {
-	private float startTime=0;
-	private string currentTime;
-	public GUIText timerText;
-	public GameObject player;
+	private float startTime=0;//Start at time zero
+	private string currentTime;//What is time currently to show on screen
+	public GUIText timerText;//where the time is displayed
+	public GameObject player;//player game object
 	// Use this for initialization
 	void Start () {
 

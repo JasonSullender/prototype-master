@@ -1,16 +1,20 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// this class is used to instantiate the sword prefab on the player prefab
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class SwordController : MonoBehaviour {
 
 	
-	public Rigidbody2D sword;				
-	public float speed;				
-	public float fireRate;
+	public Rigidbody2D sword;//sword rigidbody				
+	public float speed;				//speed of sword
+	public float fireRate;//rate at which sword is instantiated
 	
-	private CharController playerCtrl;		
-	private float nextFire;
-	private GameObject player;
+	private CharController playerCtrl;//get the player code		
+	private float nextFire;//time until next fire
+	private GameObject player;//player game object
 
 	/// <summary>
 	/// We find the game object Player object

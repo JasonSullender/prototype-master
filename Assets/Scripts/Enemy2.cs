@@ -1,27 +1,33 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This class is attached to the minotaur prefab to control the enemy
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class Enemy2 : MonoBehaviour {
-	public float moveSpeed;
-	public bool moveRight;
-	private Rigidbody2D rb;
-	public Transform wallCheck;
-	public float wallCheckRadius;
-	public LayerMask whereIsWall;
-	private bool onWall;
-	private bool atEdge;
-	public Transform edgeCheck;
-	public int HP = 2;					
+	public float moveSpeed;//speed of the enemy can be changed in scene
+	public bool moveRight;//Checks if enemy is moving right
+	private Rigidbody2D rb;//rigid body of the enemy
+	public Transform wallCheck;//checks if the enemy is against wall
+	public float wallCheckRadius;//radius to check the wall
+	public LayerMask whereIsWall;//check where the wall is 
+	private bool onWall;//checks if enemy is colliding with the wall
+	private bool atEdge;//checks if enemy is on the edge of a platform
+	public Transform edgeCheck;//checks where the edge of platform is
+	public int HP = 2;//sets the enemy health to two					
 	private GameObject gameController;
-	private bool playerCharge;
-	public LayerMask whereIsPlayer;
-	public float playerCheckRadius;
-	public Transform playerCheck;
-	private bool onEnemy;
-	public Transform enemyCheck;
-	public float enemyCheckRadius;
-	public LayerMask whereIsEnemy;
-	private Animator minotaurAnim;
+	private bool playerCharge;//Checks if player is in the player charge area
+	public LayerMask whereIsPlayer;//checks where the player is
+	public float playerCheckRadius;//checks within radius of the object
+	public Transform playerCheck;//checks if player is within radius
+	private bool onEnemy;//checks if the player is colliding with another enemy
+	public Transform enemyCheck;//checks if there is an enemy
+	public float enemyCheckRadius;//radius where the enemy checks for another enemy
+	public LayerMask whereIsEnemy;//checks where the enemy is 
+	private Animator minotaurAnim;//minotaur walking animation
+	private AudioSource source;//audio source of minotaur
+	public AudioClip moo;//charge sound of minotaur
 	/// <summary>
 	/// We get the Enemy object rigidbody component
 	/// </summary>
@@ -29,6 +35,7 @@ public class Enemy2 : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 		//gameController = GetComponent<CharController> ();
 		minotaurAnim = GetComponent<Animator> ();
+		source = GetComponent<AudioSource> ();
 	}
 	
 	/// <summary>
@@ -49,6 +56,7 @@ public class Enemy2 : MonoBehaviour {
 		if (playerCharge)
 		{
 			moveSpeed=3;
+			source.PlayOneShot(moo,.17f);
 			minotaurAnim.SetFloat("charge",moveSpeed);
 			print ("Move faster");
 		}

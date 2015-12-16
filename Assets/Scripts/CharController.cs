@@ -1,36 +1,48 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// written by jason sullender
+/// this class is attached to the Player prefab to be a controller for the player
+/// this class does many things for the player such as do the controls like move, swing sword
+/// jump and throw spear. This class also keeps track of the health for the player character.
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class CharController : MonoBehaviour {
 
-	private Rigidbody2D rb;
-	public float moveSpeed;
+	private Rigidbody2D rb;//For player rigidbody
+	public float moveSpeed;//For the move speed of the player that can be changed in scene
 	//private float maxSpeed=5f;
 	private Vector2 input;
-	public float jumpHeight;
-	public Transform groundCheck;
-	public float groundCheckRadius;
-	public LayerMask whereIsGround;
-	private bool onGround;
-	private bool jumpTwice;
+	public float jumpHeight;//For the player jump height that can be changed in scene
+	public Transform groundCheck;//to check where the ground tag is 
+	public float groundCheckRadius;//to check within a radius where ground tag is
+	public LayerMask whereIsGround;//To make sure ground is near player
+	private bool onGround;//To check if player is in contact with ground
+	private bool jumpTwice;//to keep track if the player has jumped twice
 	[HideInInspector]
-	public bool facingRight = true;	
-	BoxCollider2D box;
-	public GameObject spear;
-	public Transform spearSpawn;
-	public float fireRate;
-	private float nextFire;
-	public float bulletDelay = .25f;
-	float timeUntilNextBullet=0;
-	public GameObject prefabSwordSwing;
-	public bool hasHelm=false;
-	public bool hasArmor=false;
-	public int health;
-	private Animator myAnim;
-	private bool iswalking=false;
-	private float slash=0;
-	public bool frozen=false;
-	private float jump=0;
+	public bool facingRight = true;	//to check if player is facing right
+	BoxCollider2D box;//box collider of the player
+	public GameObject spear;//to get the spear prefab
+	public Transform spearSpawn;//to get where the spear should spawn
+	public float fireRate;//keep track of the fire rate of the spear
+	private float nextFire;//keep track if you can fire the spear
+	public float bulletDelay = .25f;//the time until player can throw the spear
+	float timeUntilNextBullet=0;//timer count down until the player can throw the spear
+	public GameObject prefabSwordSwing;//gets the sword prefab
+	public bool hasHelm=false;//checks if player has helmet
+	public bool hasArmor=false;//checks if player has armor
+	public int health;//health number for player
+	private Animator myAnim;//animator attached to player
+	private bool iswalking=false;//checks if player is walking
+	private float slash=0;//number to keep track of swing for swing animation
+	public bool frozen=false;//checks if the player is paused
+	private float jump=0;//number to keep track of jump for jump animation
+	public AudioClip walk;//sound clip for player walk
+	private AudioSource source;//players audio source
+	public AudioClip swordSwing;//sound clip for player sword swing
+	public AudioClip hurt;//sound clip for player hurt
+
+
 	/// <summary>
 	/// We get the rigidbody and the boxcollider of the Player object
 	/// </summary>
@@ -40,6 +52,7 @@ public class CharController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D> ();
 		box = GetComponent<BoxCollider2D> ();
 		myAnim = GetComponent<Animator> ();
+		source = GetComponent<AudioSource> ();
 	}
 	/// <summary>
 	/// We use the ground object checker to see if the ground object is touching the ground
@@ -76,6 +89,7 @@ public class CharController : MonoBehaviour {
 //		}
 		if (Input.GetKeyDown(KeyCode.X)) {
 			slash=1;
+
 			if (timeUntilNextBullet <= 0) {
 				if(facingRight)
 				{
@@ -86,6 +100,7 @@ public class CharController : MonoBehaviour {
 					RayCastShotLeft();
 				}
 				myAnim.SetFloat("slash",slash);
+				source.PlayOneShot (swordSwing,.5f);
 				PrimaryAttack ();
 				timeUntilNextBullet = bulletDelay;
 			} else {
@@ -126,7 +141,8 @@ public class CharController : MonoBehaviour {
 			rb.velocity = new Vector2 (moveSpeed, rb.velocity.y);
 
 			myAnim.SetFloat("speed",moveSpeed);
-
+			if(!source.isPlaying)
+				source.PlayOneShot(walk,1f);
 			if (!facingRight)
 			{
 				Flip ();
@@ -136,6 +152,7 @@ public class CharController : MonoBehaviour {
 		if(Input.GetKeyUp (KeyCode.D))
 		{
 			moveSpeed=0;
+			source.Stop();
 			myAnim.SetFloat("speed",moveSpeed);
 		}
 
@@ -147,7 +164,8 @@ public class CharController : MonoBehaviour {
 			rb.velocity = new Vector2 (-moveSpeed, rb.velocity.y);
 
 			myAnim.SetFloat ("speed",Mathf.Abs (moveSpeed));
-
+			if(!source.isPlaying)
+				source.PlayOneShot(walk,1f);
 			if (facingRight)
 			{
 				Flip ();
@@ -158,6 +176,7 @@ public class CharController : MonoBehaviour {
 		if(Input.GetKeyUp (KeyCode.A))
 		{
 			moveSpeed=0;
+			source.Stop();
 			myAnim.SetFloat("speed",moveSpeed);
 		}
 	
@@ -181,6 +200,7 @@ public class CharController : MonoBehaviour {
 	public void Jump()
 	{
 		jump = 1;
+		source.Stop();
 		myAnim.SetFloat ("jump", jump);
 		rb.velocity=new Vector2(rb.velocity.x,jumpHeight);
 	}
@@ -299,6 +319,11 @@ public class CharController : MonoBehaviour {
 		}
 	
 		}
+	/// <summary>
+	/// this resets the numbers for move and jump to the original setting
+	/// this also makes it so that the player can move after being frozen for 
+	/// 2 seconds
+	/// <returns>The to normal.</returns>
 	IEnumerator BackToNormal() {
 
 		yield return new WaitForSeconds(2);
@@ -308,9 +333,12 @@ public class CharController : MonoBehaviour {
 
 	}
 
-	
+	/// <summary>
+	/// This function will decrement health and set any armors back to false
+	/// </summary>
 	public void PlayerHurt()
 	{
+		source.PlayOneShot (hurt, 1f);
 		// Reduce the number of hit points by one.
 		health--;
 		if (health == 2)

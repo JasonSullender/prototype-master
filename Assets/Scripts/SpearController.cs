@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This is used to hurt the enemy when the spear collides with the enemy tag
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class SpearController : MonoBehaviour {

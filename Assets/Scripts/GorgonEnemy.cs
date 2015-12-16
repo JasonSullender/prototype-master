@@ -1,26 +1,30 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// THis is attached to the gorgon prefab runs like the Enemy2 class
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class GorgonEnemy : MonoBehaviour {
-	public float moveSpeed;
-	public bool moveRight;
-	private Rigidbody2D rb;
-	public Transform wallCheck;
-	public float wallCheckRadius;
-	public LayerMask whereIsWall;
-	private bool onWall;
-	private bool atEdge;
-	public Transform edgeCheck;
-	public int HP = 2;					
+	public float moveSpeed;//move speed of gorgon
+	public bool moveRight;//checks if gorgon facing right
+	private Rigidbody2D rb;//gets rigidbody of the gorgon
+	public Transform wallCheck;//checks if the gorgon is against wall
+	public float wallCheckRadius;//radius to check for wall
+	public LayerMask whereIsWall;//checks if wall is in radius
+	private bool onWall;//checks if the gorgon is colliding with wall
+	private bool atEdge;//checks if the gorgon is colliding with edge of platform
+	public Transform edgeCheck;//checks where edge of platform is 
+	public int HP = 2;		//sets the health of the gorgon			
 	private GameObject gameController;
-	private bool playerCharge;
-	public LayerMask whereIsPlayer;
-	public float playerCheckRadius;
-	public Transform playerCheck;
-	private bool onEnemy;
-	public Transform enemyCheck;
-	public float enemyCheckRadius;
-	public LayerMask whereIsEnemy;
+	private bool playerCharge;//checks if player collides with player charge object
+	public LayerMask whereIsPlayer;//Checks if player is colliding
+	public float playerCheckRadius;//the radius to check for player
+	public Transform playerCheck;//checks if player is in radius
+	private bool onEnemy;//checks if colliding with another enemy
+	public Transform enemyCheck;//checks if it is an enemy
+	public float enemyCheckRadius;//radius to check for enemy
+	public LayerMask whereIsEnemy;//checks if enemy is in radius
 	
 	/// <summary>
 	/// We get the Enemy object rigidbody component

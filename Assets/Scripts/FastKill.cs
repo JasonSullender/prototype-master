@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This fires the faster fireball prefab to hurt the player
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class FastKill : MonoBehaviour {
 
-	public Rigidbody2D fireBall;				
-	public float speed;				
-	public Vector2 spawnSpot;
-	private float startTime=2f;
+	public Rigidbody2D fireBall;//rigid body of fireball prefab				
+	public float speed;//speed of fireball prefab				
+	public Vector2 spawnSpot;//spot where the prefab is instantiated
+	private float startTime=2f;//wait time to shoot the prefab
 	
 	/// <summary>
 	/// Starts timer from 2 to zero then calls the shoot function

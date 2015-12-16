@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// this will kill the player when the player comes in contact with the fall kill
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class FallKill : MonoBehaviour {

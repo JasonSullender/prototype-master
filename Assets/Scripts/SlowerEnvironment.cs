@@ -1,11 +1,15 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// Shoots the fireball prefab when after a certain amount of time to hurt the player
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class SlowerEnvironment : MonoBehaviour {
-	public Rigidbody2D fireBall;				
-	public float speed;				
-	public Vector2 spawnSpot;
-	private float startTime=4f;
+	public Rigidbody2D fireBall;//fireball prefab				
+	public float speed;	//speed of fireball			
+	public Vector2 spawnSpot;//spawn of fireball
+	private float startTime=4f;//count down seconds till next fireball shoot
 
 	/// <summary>
 	/// Starts timer from 4 seconds to zero then calls the shoot function

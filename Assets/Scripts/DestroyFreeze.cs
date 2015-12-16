@@ -1,9 +1,15 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// this is attached to the freeze cone prefab to detroy the prefab after 1 second
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class DestroyFreeze : MonoBehaviour {
 
-	// Use this for initialization
+/// <summary>
+/// Destory prefab after 1 second
+
 	void Start () {
 		Destroy (gameObject, 1f);
 	}

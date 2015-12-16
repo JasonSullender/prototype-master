@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This is to check if the sword collides with enemy and hurt the enemy if it does
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class SwordHit : MonoBehaviour {

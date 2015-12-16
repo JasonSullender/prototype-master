@@ -1,16 +1,22 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This class is attached to the chest prefab 
+/// this class is used to check whether the player has an armor or helmet prefab on to change
+/// player health
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class Chest : MonoBehaviour {
 
 	
 
-		public int health;
+		public int health;//health for chest
 		
-		public Collider2D armor;
-		public Collider2D helmet;
-		public bool playerCtrlHelm;
-		public bool playerCtrlArmor;
+		public Collider2D armor;//armor prefab collider
+		public Collider2D helmet;//helmet prefab collider
+		public bool playerCtrlHelm;//checks if player has helmet
+		public bool playerCtrlArmor;//checks if player has armor
 		// Use this for initialization
 		void Start () {
 			//  playerCtrlHelm = GetComponent<CharController> ().hasHelm;
@@ -21,6 +27,10 @@ public class Chest : MonoBehaviour {
 		void Update () {
 			
 		}
+	/// <summary>
+	/// when the tag of spear collides with the chest call hurt function
+	/// </summary>
+	/// <param name="col">Col.</param>
 		void OnTriggerEnter2D (Collider2D col) 
 		{
 			// If it hits an enemy...
@@ -31,6 +41,10 @@ public class Chest : MonoBehaviour {
 			
 			
 		}
+	/// <summary>
+	/// decrements the chest health then destroys the chest prefab
+	/// after destroyed instantiate the prefab that the player doesn't have yet
+	/// </summary>
 		public void Hurt()
 		{
 			

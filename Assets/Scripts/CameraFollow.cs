@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour {
 
 	public GameObject player;
 	private Vector3 offset;
+
 	
 	/// <summary>
 	/// This finds the position of the Main Camera object compared to the Player object. 

@@ -1,9 +1,15 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// this class is attached to the crumble cube prefab and when the player collides with
+/// this it changes the material to the cracked crumble wall then destroys the object
+/// after half a second
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class CrumbleCube : MonoBehaviour {
-	public Renderer rend;
-	public Material crumble;
+	public Renderer rend;//crumble cube renderer
+	public Material crumble;//crack crumble cube material
 
 	void Start()
 	{

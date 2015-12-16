@@ -1,12 +1,16 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This is for the medium fire ball object that shoots fire ball at a certain time
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class MediumKill : MonoBehaviour {
 
-	public Rigidbody2D fireBall;				
-	public float speed;				
-	public Vector2 spawnSpot;
-	private float startTime=3f;
+	public Rigidbody2D fireBall;//fireball prefab				
+	public float speed;		//fireball speed		
+	public Vector2 spawnSpot;//spawn of fireball
+	private float startTime=3f;//count down time for fireball
 	/// <summary>
 	/// Count down the timer from 3 to zero then call Shoot function
 	/// </summary>

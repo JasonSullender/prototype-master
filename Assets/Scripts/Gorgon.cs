@@ -1,19 +1,28 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// This is class that is on the object attached to the gorgon to fire the freeze cone at the player
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class Gorgon : MonoBehaviour {
 
-	public Rigidbody2D freeze;				
-	public float speed;				
-	private float startTime=3f;
-	private GorgonEnemy gorgonCtrl;
-
+	public Rigidbody2D freeze;//freeze rigidbody				
+	public float speed;//speed of the freeze				
+	private float startTime=3f;//timer count down till the next fire of the freeze
+	private GorgonEnemy gorgonCtrl;//reference to the gorgon controller code
+	/// <summary>
+	/// gets the gorgon controller code
+	/// </summary>
 	void Start()
 	{
 		
 		
 		gorgonCtrl = transform.root.GetComponent<GorgonEnemy>();
 	}
+	/// <summary>
+	/// Counts down timer once timer is zero then triggers the shoot function
+	/// </summary>
 	void Update()
 	{
 		startTime -= Time.deltaTime;
@@ -24,7 +33,7 @@ public class Gorgon : MonoBehaviour {
 		}
 	}
 	/// <summary>
-	/// Instantiate fireball then call resettimer
+	/// Instantiate freeze then call resettimer
 	/// </summary>
 	public void Shoot()
 	{

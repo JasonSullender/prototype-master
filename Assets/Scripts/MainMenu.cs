@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿/// <summary>
+/// Written by Jason Sullender
+/// Runs the main menu buttons
+/// </summary>
+using UnityEngine;
 using System.Collections;
 
 public class MainMenu : MonoBehaviour {
